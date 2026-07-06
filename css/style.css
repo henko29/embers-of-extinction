@@ -198,3 +198,177 @@ overflow: hidden;
         height:240px;
     }
 }
+.timeline{
+    display:flex;
+    flex-direction:column;
+    gap:28px;
+}
+
+.timeline-item{
+    background:var(--bg-lighter);
+    border-left:4px solid var(--accent-color);
+    padding:24px;
+    border-radius:8px;
+}
+
+.timeline-item h3{
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.timeline-item span{
+    color:var(--accent-color);
+    font-size:.9rem;
+    margin-left:10px;
+}
+
+.highlight-item{
+    border-left-color:#ffd54f;
+    background:#232323;
+}
+
+.final-question{
+    font-size:1.15rem;
+    color:#ffd54f;
+    font-weight:bold;
+}
+.map-container{
+    margin:40px 0;
+    text-align:center;
+}
+
+.responsive-img{
+    width:100%;
+    border-radius:12px;
+    display:block;
+}
+
+.card-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:24px;
+}
+
+.faction-card{
+    background:var(--bg-lighter);
+    padding:24px;
+    border-radius:12px;
+    border:1px solid var(--border-color);
+}
+
+.faction-card h3{
+    color:#fff;
+    margin-bottom:8px;
+}
+
+.faction-card .subtitle{
+    color:var(--accent-color);
+    margin-bottom:16px;
+}
+
+.color-dot{
+    display:inline-block;
+    width:10px;
+    height:10px;
+    border-radius:50%;
+    margin-right:8px;
+}
+
+.red{
+    background:#ff5252;
+}
+
+.blue{
+    background:#4da6ff;
+}
+
+.green{
+    background:#66cc66;
+}
+
+.gold{
+    background:#e0b84c;
+}
+
+.theme-music-container{
+    background: var(--bg-lighter);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 2rem;
+}
+
+.music-credit{
+    text-align: center;
+    color: var(--text-muted);
+    margin-bottom: 1.5rem;
+}
+
+.music-controls{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.track{
+    background: #242424;
+    border: 1px solid var(--border-color);
+    border-radius: 10px;
+    padding: 1rem 1.2rem;
+}
+
+.track span{
+    display: block;
+    margin-bottom: .8rem;
+    font-weight: 600;
+    color: #fff;
+}
+
+.track audio{
+    width: 100%;
+}
+
+/* ==========================
+   작품 소개
+========================== */
+
+.intro-section{
+    margin-top: 4rem;
+}
+
+.notice{
+    background: rgba(255,107,53,.08);
+    border-left: 4px solid var(--accent-color);
+    padding: 1rem 1.2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    color: #ddd;
+    line-height: 1.7;
+}
+
+.highlight-quote{
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background: #1a1a1a;
+    border-left: 5px solid var(--accent-color);
+    border-radius: 10px;
+    color: #f2f2f2;
+    font-size: 1.05rem;
+    line-height: 1.8;
+    font-style: normal;
+}
+
+/* ==========================
+   세계관 연혁
+========================== */
+
+.timeline-section{
+    margin-top: 4rem;
+}
+
+/* ==========================
+   주요 국가 및 세력
+========================== */
+
+.faction-section{
+    margin-top: 4rem;
+}
