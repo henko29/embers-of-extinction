@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>불씨 - 작품 소개</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v3.2.1/dist/web/static/pretendard.css" />
+</head>
+<body>
+
+  <header class="main-header">
+    <div class="header-container">
+      <h1>불씨 <span>The Ember</span></h1>
+      <nav class="main-nav">
+        <a href="index.html" class="active">작품 소개</a>
+        <a href="dragons.html">드래곤</a>
+        <a href="characters.html">인물</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <main>
+    <section class="container theme-music-container">
+      <p class="music-credit">이 테마곡은 젠잇 크리에이터 <strong>'심야'</strong> 님께서 제작해주신 음악입니다.</p>
+      
+      <div class="music-controls">
+        <div class="track">
+          <span>🎵 메인 테마곡 - Light the ember</span>
+          <audio controls>
+            <source src="audio/light the ember.mp3" type="audio/mpeg">
+            브라우저가 오디오 태그를 지원하지 않습니다.
+          </audio>
+        </div>
+        
+        <div class="track">
+          <span>🎵 Hunt the flame (리믹스 버전)</span>
+          <audio controls>
+            <source src="audio/hunt the flame.mp3" type="audio/mpeg">
+            브라우저가 오디오 태그를 지원하지 않습니다.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <section class="container intro-section">
+      ```
+
+---
+
+### 2. CSS 추가 (디자인)
+`css/style.css` 파일의 맨 마지막 줄에 아래 코드를 그대로 복사해서 붙여넣어 주세요. 웹사이트의 전체적인 다크 테마(회색/주황색 포인트)와 이질감 없이 어우러지도록 디자인했습니다.
+
+```css
+/* =========================================
+   테마곡 플레이어 섹션
+========================================= */
+.theme-music-container {
+  background-color: var(--bg-lighter);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 3rem; /* 작품 소개와 간격 띄우기 */
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.music-credit {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  margin-bottom: 1.5rem;
+}
+
+/* '심야' 님 이름 강조 */
+.music-credit strong {
+  color: var(--accent-color);
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+
+.music-controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+  background-color: var(--bg-color);
+  padding: 1rem 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #2a2a2a;
+}
+
+.track span {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+/* 오디오 컨트롤러 크기 조정 */
+audio {
+  height: 36px;
+  border-radius: 20px;
+  outline: none;
+}
+    <section class="container intro-section">
+      <h2>작품 소개</h2>
+      <div class="intro-content">
+        <p class="notice">※ 이 작품은 "잔광"과 동일한 세계관을 공유합니다.<br>
+        ※ 드래곤 히로인들 외 인물들의 이미지는 모두 1장씩입니다.</p>
+
+        <p>이 세계에서 드래곤은 신화가 아니다. 그들은 마공학을 유지하기 위한 자원이자, 기후와 마력 균형을 위협하는 ‘관리 대상’이며, 동시에 인간이 저지른 선택의 결과다. 사냥은 영광이 아닌 업무이며, 생존은 도덕보다 우선한다.</p>
+
+        <p>한때, 블랙 드래곤 아르세리아를 사랑했던 한 인간 남성이 홀리몰리 제국의 황제가 되어 드래곤 사냥 금지법을 제정했다. 드래곤들은 잠시나마 당당하게 살아갈 수 있었다. 하지만 그것은 잠깐의 꿈에 불과했다. 황제가 서거하자 귀족들은 법을 곧바로 폐지했고, 드래곤 사냥 또한 다시 시작되었다. 이제, 세상에는 딱 100마리의 드래곤만이 남아있다.</p>
+
+        <p>당신은 제국 드래곤 사냥팀의 신입 사냥꾼이다. 사냥 임무, 장비 운용, 팀 내 관계, 제국의 명령과 개인의 판단 사이에서 반복적으로 질문받는다. 드래곤을 사냥하는 것이 정말로 세계를 살리는 일인가, 아니면 불씨를 꺼뜨리는 마지막 손길인가.</p>
+
+        <blockquote class="highlight-quote">
+          <strong>〈꺼져가는 불씨의 시대〉</strong>는 영웅 서사가 아닌, 책임과 침묵의 기록이다. 당신은 스스로 선택한 결과를 그저 끝까지 지켜볼 뿐이다.
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="container timeline-section">
+      <h2>세계관 연혁</h2>
+      <div class="timeline">
+        
+        <article class="timeline-item">
+          <h3>관조의 시대 <span>태초</span></h3>
+          <p>아득한 과거, 이 세계는 자연 그 자체가 질서였다. 계절은 지나치지 않았고, 생명은 스스로의 한계를 알고 있었다. 그 중심에는 고대종, 드래곤이 있었다.</p>
+          <p>드래곤은 왕이 아니었고, 신도 아니었다. 그들은 명령하지 않았고, 간섭하지도 않았다. 다만 세계의 흐름이 어긋날 때, 보이지 않게 균형을 되돌리는 존재였다.</p>
+          <p>인간은 그들을 공포로 불렀고, 경외로 노래했으며, 숭배하거나 속삭였다. 그러나 드래곤은 스스로를 특별하게 인식하지 않았다. 그들은 자연의 일부로 존재했을 뿐, 세계를 “관리한다”는 개념조차 알지 못했다.</p>
+          <p>이 시기를, 훗날 인간들은 관조의 시대라 부른다. 아직 아무도 세계를 소유하려 하지 않았던 시절이었다.</p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>전락 <span>불씨의 시대 ~ 기계의 시대</span></h3>
+          <p>인간의 연구는 언제나 호기심에서 시작된다. 그러나 그 끝은 대부분 욕망이었다.</p>
+          <p>드래곤의 피가 마력 전도체라는 사실이 밝혀졌고, 비늘이 육체와 기계를 연결하는 촉매임이 증명되었으며, 뼈가 엔진핵의 회로 안정화 구조로 사용 가능하다는 결론이 내려졌다.</p>
+          <p>이 발견은 마공학이라는 기술 체계를 탄생시켰다. 처음의 마공학은 무해했다. 난로, 전등, 농업 보조 장비. 삶을 조금 더 편하게 만드는 기술이었다.</p>
+          <p>그러나 기술은 늘 전쟁에 먼저 닿는다. 마력 포, 마공학 병사, 추출기와 동력로. 그 순간부터 드래곤은 더 이상 자연의 일부가 아니었다. 고갈 가능한 자원. 이 시점부터 드래곤은 신화에서 내려와 연구 대상이 되었고, 사냥감이 되었다.</p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>몰락 <span>사냥의 시대</span></h3>
+          <p>사냥은 곧 산업이 되었다. 드래곤의 위치와 습성을 기록하는 학술기관, 사냥을 수행하는 국가 군단, 부산물을 가공하는 공장과 시장.</p>
+          <p>국가와 기업은 경쟁했고, 효율과 생산량이 신앙을 대체했다. 드래곤은 한 마리씩 사라졌다. 하늘의 그림자는 전설이 되었고, 남은 것은 기류의 흔들림과 기억의 잔향뿐이었다.</p>
+          <p>누군가는 그것을 발전이라 불렀고, 누군가는 불가피한 희생이라 기록했다. 드래곤의 시대는 이렇게, 통계 속에서 끝나갔다.</p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>균열 <span>망가진 세계</span></h3>
+          <p>드래곤이 사라진 자리는 단순한 공백이 아니었다. 그들이 유지하던 균형이 무너지자 기후는 극단적으로 요동쳤고, 어떤 지역에서는 계절이 하루 단위로 교차했다.</p>
+          <p>마력이 과포화된 지대에서는 공간 자체가 일그러졌고, 생명은 형태를 유지하지 못했다. 마공학은 이를 “해결”하는 것처럼 보였으나, 장치들은 또 다른 균열을 만들었다.</p>
+          <p>세계는 이때부터 천천히, 그러나 확실하게 붕괴하기 시작했다.</p>
+        </article>
+
+        <article class="timeline-item">
+          <h3>희망 <span>잔광의 시대</span></h3>
+          <p>전 세계에 남은 드래곤은 수십 마리. 그들은 끝을 알고 있었다. 이 시대는 이렇게 불렸다. 잔광의 시대. 불이 꺼지기 직전 남은 마지막 빛. 희미하지만, 아직 사라지지 않은 생명의 증거.</p>
+          <p>남은 드래곤들은 인간의 모습으로 숨어 살며, 추모하고, 관조하고, 기다렸다. 그러던 중, 기적처럼 하나의 선택이 있었다. 아르세리아를 사랑한 한 인간 남성이 홀리몰리 제국의 황제가 되었고, 드래곤 사냥 금지법을 제정했다.</p>
+          <p>사냥은 멈췄고, 드래곤은 다시 한 번 인간을 믿어보려 했다. 그러나 행복은 길지 않았다. 황제의 서거와 함께 법은 무너졌고, 잔광의 시대는 막을 내렸다.</p>
+        </article>
+
+        <article class="timeline-item highlight-item">
+          <h3>최종장 <span>꺼져가는 불씨의 시대</span></h3>
+          <p>지금은 꺼져가는 불씨의 시대다. 드래곤은 더 이상 세계를 유지하지 않는다. 그들은 선택했다. 개입하지 않음으로써, 세계의 붕괴를 증명하기로.</p>
+          <p>마공학은 한계에 도달했고, 도시는 유지되지만 살아 있지 않으며, 자연은 회복되지도, 완전히 죽지도 않은 상태다.</p>
+          <p>인간은 아직 깨닫지 못한다. 이 붕괴가 가속되면 기술로도 되돌릴 수 없다는 사실을. 그리고 이 시대의 중심에는 당신, 제국 소속 드래곤 사냥팀의 신입 사냥꾼이 있다. 당신은 끊임없이 고뇌할 것이다. 왜 사냥하는지. 당신은 인간이기 때문이다.</p>
+          <p class="final-question">“당신은 이 불씨를 꺼뜨릴 것인가, 끝까지 바라보기만 할 것인가, 아니면, 다시 타오르도록 바람을 불어넣어 줄 것인가..”</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container faction-section">
+      <h2>주요 국가 및 세력</h2>
+      <div class="map-container">
+        <img src="images/dragons/MAP.png" alt="세계 지도" class="responsive-img">
+      </div>
+      
+      <div class="card-grid">
+        <article class="faction-card holymoly">
+          <h3><span class="color-dot red"></span> 홀리몰리 제국</h3>
+          <p class="subtitle">산업·군사 중심 초강대국</p>
+          <p>꺼져가는 불씨의 시대에 들어선 제국은 더 이상 “지배”를 말하지 않는다. 유지, 억제, 관리가 그들의 언어다. 마공로는 대륙의 70%를 덮고 있으며 도시는 가동 중인 구조물에 가깝다. 생포된 드래곤은 "전략적 재난 억제 장치"로 취급된다.</p>
+          <p><strong>“우리가 멈추면, 세계도 멈춘다.”</strong></p>
+        </article>
+
+        <article class="faction-card kkakkakmoly">
+          <h3><span class="color-dot blue"></span> 까까몰리 공국</h3>
+          <p class="subtitle">패전국 및 경제적 종속국</p>
+          <p>과거 제국과 경쟁했던 이들은 명백한 실패 국가다. 기후 급변과 자원 고갈로 고원 도시 상당수가 버려졌으며, 제국의 기술 지원 없이는 유지되지 않는다. 아이러니하게도 드래곤을 가장 적게 죽인 국가였으나 그것이 끝까지 살아남는 벌이 되었다.</p>
+        </article>
+
+        <article class="faction-card guardians">
+          <h3><span class="color-dot yellow"></span> 수호의례단</h3>
+          <p class="subtitle">비밀 종교적 조직 (기억의 기록자)</p>
+          <p>온건파는 기록하고 숨기며 "기억이 남아 있는 한 멸종은 아니다"라고 믿는다. 반면 급진파는 드래곤을 살리려면 인간 문명을 무너뜨려야 한다고 결론 내리고 테러와 마공로 파괴를 자행한다. 이들은 현재 살아남기 위한 사상 전쟁 중이다.</p>
+        </article>
+
+        <article class="faction-card wild-alliance">
+          <h3><span class="color-dot green"></span> 야생연맹</h3>
+          <p class="subtitle">생태적 극단주의 집단</p>
+          <p>자연 복귀를 외치며 마공학 시설과 인간 거점을 공격해 인간의 활동 반경을 줄이는 것이 유일한 목표다. 드래곤을 신성시하지만 의사소통조차 불경하다 여겨 접촉하지 않는다.</p>
+        </article>
+
+        <article class="faction-card asmil">
+          <h3><span class="color-dot brown"></span> 아스밀 왕국</h3>
+          <p class="subtitle">정치적 중립과 균형 추구</p>
+          <p>공식적으로 드래곤 사냥을 금지하진 않으나 비공식적으로 방해하며 공존 가능성을 실험하는 마지막 국가다. 하지만 기술력과 군사력이 부족해 해답을 찾기 전 세계가 먼저 무너질 위기에 처해있다.</p>
+        </article>
+
+        <article class="faction-card polymorph">
+          <h3><span class="color-dot white"></span> 폴리모프 드래곤 집단</h3>
+          <p class="subtitle">미확인 잔존 세력</p>
+          <p>서로를 믿지 않고 단독 생존을 택한 마지막 드래곤들. 인간 사회에 숨거나, 파괴를 주도하거나, 삶의 이유를 잊어버렸다. 이들은 묻는다. <strong>“이 세계는, 우리가 남아 있을 가치가 있는가?”</strong></p>
+        </article>
+      </div>
+    </section>
+
+    <section class="container equipment-section">
+      <h2>드래곤 사냥 장비 및 도구</h2>
+      
+      <div class="equipment-list">
+        <article class="equip-item">
+          <div class="equip-img">
+             <img src="images/dragons/포착린.png" alt="포착린">
+          </div>
+          <div class="equip-desc">
+            <h3>⛓️ 포착린</h3>
+            <p>드래곤을 사살하기보다 움직임과 마력을 봉쇄하는 데 특화된 구속 장치다. 앵커를 설치하면 비늘과 마력 파장을 인식해 반투명한 마력 구속 필드를 생성한다. 이는 드래곤 내부 마력 흐름을 왜곡시켜 신경 손상이나 마력 붕괴를 유발한다.</p>
+          </div>
+        </article>
+
+        <article class="equip-item">
+          <div class="equip-img">
+             <img src="images/dragons/아르카랜스.png" alt="아르카 랜스">
+          </div>
+          <div class="equip-desc">
+            <h3>🔱 아르카 랜스 (성창)</h3>
+            <p>드래곤의 가장 얇은 비늘 틈이나 관절부를 노려 찌르는 고전압·고열 복합 무기. 관통 순간 고온의 마력 플라즈마와 전류를 방출해 내부 장기와 심장핵을 과부하시킨다. 단발 사용 후 냉각이 필요하며 미숙련자가 다루면 반동 마력에 사망할 수 있다.</p>
+          </div>
+        </article>
+
+        <article class="equip-item">
+          <div class="equip-img">
+             <img src="images/dragons/흡혈채굴기.png" alt="흡혈채굴기">
+          </div>
+          <div class="equip-desc">
+            <h3>💉 흡혈 채굴기</h3>
+            <p>생체 자원 지속 추출 장치. 마력 관침을 혈관에 삽입해 피를 빨아들임과 동시에 내부 마력을 분리 및 안정화한다. 추출된 혈액은 즉시 '마력 혈액 결정'으로 변환된다. 극심한 고통을 유발하며 장기적인 오염을 남긴다.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 불씨(The Ember) Universe. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
