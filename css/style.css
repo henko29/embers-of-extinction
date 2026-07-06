@@ -279,23 +279,29 @@ footer {
    등장인물 페이지 스타일
 ========================================= */
 .character-section {
-  margin-bottom: 4rem;
+  padding: 40px 0;
+  border-bottom: 1px solid var(--border-color); /* 섹션 구분선 */
+  margin-bottom: 20px;
 }
 
-.char-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 2rem;
-  margin-top: 2rem;
+.section-divider {
+  font-size: 1.8rem;
+  color: var(--accent-color);
+  margin-bottom: 2rem;
+  padding-bottom: 10px;
+  border-left: 5px solid var(--accent-color);
+  padding-left: 15px;
 }
 
+/* 카드 디자인 강화 */
 .char-card {
   background-color: var(--bg-lighter);
-  border-radius: 12px;
-  overflow: hidden;
-  display: flex;
   border: 1px solid var(--border-color);
-  transition: transform 0.3s ease;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  gap: 20px;
+  transition: transform 0.2s;
 }
 
 .char-card:hover {
