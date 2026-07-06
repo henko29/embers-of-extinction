@@ -409,3 +409,36 @@ audio {
   outline: none;
 }
 
+/* 드래곤 카드 그리드 */
+.dragon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.dragon-card {
+  background-color: var(--bg-lighter);
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid var(--border-color);
+  border-top: 4px solid var(--element-color, #ff6b35); /* 속성별 컬러 */
+  transition: transform 0.3s ease;
+}
+
+.card-img-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
