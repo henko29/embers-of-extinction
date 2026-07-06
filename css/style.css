@@ -348,10 +348,7 @@ footer {
   margin: 0;
 }
 
-```css
-/* =========================================
-   테마곡 플레이어 섹션
-========================================= */
+
 .theme-music-container {
   background-color: var(--bg-lighter);
   border: 1px solid var(--border-color);
@@ -405,3 +402,4 @@ audio {
   border-radius: 20px;
   outline: none;
 }
+
